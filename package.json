@@ -1,0 +1,19 @@
+{
+  "name": "mcd-decode",
+  "main": "./lib/mcd-decode",
+  "version": "0.1.0",
+  "description": "A decoder for a very specific message",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-text-editor": "mcd-decode:decode"
+  },
+  "repository": "https://github.com/atom/mcd-decode",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "pako": "^0.2.7"
+  }
+}
