@@ -1,10 +1,9 @@
 {
   "name": "mcd-decode",
   "main": "./lib/mcd-decode",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A decoder for a very specific message",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-text-editor": "mcd-decode:decode"
   },
