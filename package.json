@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-text-editor": "mcd-decode:decode"
   },
-  "repository": "https://github.com/atom/mcd-decode",
+  "repository": "https://github.com/laggedHero/mcd-decode",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
