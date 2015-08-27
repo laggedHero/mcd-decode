@@ -1,4 +1,4 @@
-## 0.5.0 - First Release
+## 0.6.0 - First Release
 * Set the grammar as JSON on a successful decode
 
 ## 0.4.0 - First Release
