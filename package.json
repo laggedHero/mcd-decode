@@ -1,7 +1,7 @@
 {
   "name": "mcd-decode",
   "main": "./lib/mcd-decode",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A decoder for a very specific message",
   "keywords": [],
   "activationCommands": {
