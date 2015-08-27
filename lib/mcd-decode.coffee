@@ -4,12 +4,19 @@ module.exports =
 
   decode: ->
     editor = atom.workspace.getActivePaneItem()
-    selection = editor.getLastSelection()
+
+    text = '';
+    lines = editor.getBuffer().getLines()
+
+    for line in lines
+      line = line.trim()
+      if line.length > 10
+        text += line
 
     pako = require('pako')
-    binaryString = new Buffer(selection.getText(), 'base64')
     try
-      restored = JSON.parse(pako.inflate(binaryString, { to: 'string' }))
-      selection.insertText(JSON.stringify(restored, null, 4))
+      restored = JSON.parse(pako.inflate(new Buffer(text, 'base64'), { to: 'string' }))
+      editor.setText(JSON.stringify(restored, null, 4))
     catch error
+      atom.notifications.addError('Invalid encoded string', {})
       console.error(error)
